@@ -1,75 +1,71 @@
+/* Reset & Global Styling */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #ffecb3;
-    text-align: center;
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    color: white;
     overflow: hidden;
 }
 
 /* Loading Screen */
-.loading-screen {
-    background-color: black;
-    color: white;
+#loading-screen {
+    position: fixed;
+    width: 100%;
     height: 100vh;
+    background: black;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2rem;
-}
-
-/* Hide main content initially */
-.hidden {
-    display: none;
+    color: white;
+    z-index: 100;
 }
 
 /* Main Content */
-.content {
-    margin-top: 50px;
-    animation: fadeIn 2s ease-in-out;
+.container {
+    display: none;
+    padding: 20px;
+    margin-top: 10vh;
 }
 
-h1 {
-    color: #ff5733;
-    font-size: 3rem;
-    margin-bottom: 10px;
-}
-
-.tease {
+/* Typing Effect */
+.animated-text {
     font-size: 1.5rem;
-    color: #444;
-}
-
-.counter {
-    font-size: 1.2rem;
+    font-weight: bold;
     margin-top: 20px;
-    color: #555;
 }
 
+/* Tease Text */
+.tease-text {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Confetti */
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+/* Button */
 button {
-    background-color: #ff4500;
-    color: white;
-    font-size: 1.2rem;
-    border: none;
     padding: 10px 20px;
+    font-size: 1rem;
+    background: #ff4e50;
+    border: none;
+    color: white;
+    border-radius: 20px;
     cursor: pointer;
-    margin-top: 20px;
     transition: 0.3s;
 }
 
 button:hover {
-    background-color: #e63e00;
-}
-
-/* Surprise */
-.surprise {
-    font-size: 2rem;
-    margin-top: 20px;
-    color: #008000;
-}
-
-/* Fade In Animation */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    background: #ff6b6b;
 }

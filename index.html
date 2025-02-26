@@ -3,29 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday Victory!</title>
+    <title>Happy Birthday Vikky 🎉</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
 </head>
 <body>
 
-    <!-- Loading Screen -->
-    <div class="loading-screen">
-        <p id="typing-text"></p>
+    <!-- Loading Page -->
+    <div id="loading-screen">
+        <h1 class="typing-text">Happy Birthday to Big Head... 🎂</h1>
     </div>
 
     <!-- Main Content -->
-    <div class="content hidden">
-        <h1>🎉 Happy Birthday, Victory! 🎂</h1>
-        <p class="tease"> Yo big head, its plus 1 for you again all i can hope for is that more sense and respect is included in this year package cos you really need it. Wishing you the best🖤.  Enjoy your day, Big Head! 🎈💙</p>
-        <p class="counter">Big Head Counter: <span id="bigHeadCount"></span></p>
-        
-        <button onclick="showSurprise()">Click for a Surprise 🎁</button>
-        
-        <div class="surprise hidden">
-            <p>🎈 Hope you enjoy your day, Big Head! 🎈</p>
-        </div>
+    <div class="container">
+        <h1>🎉 Happy Birthday, Vikky! 🎉</h1>
+        <p class="animated-text"></p>
+        <p class="tease-text">You know, I was gonna say more... but I don't want my babe to bend you 😏😂</p>
+        <button onclick="playMusic()">🎶 Play Birthday Song</button>
     </div>
 
+    <!-- Confetti Animation -->
+    <canvas id="confetti"></canvas>
+
+    <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
